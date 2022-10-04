@@ -9,11 +9,9 @@ int main(int argc, char *argv[]) {
 	printf("input an integer : ");
 	scanf("%d", &x);
 	
-	if (x > 0) // 양수인 경우 
-		printf("It is a positive number.\n");
-	else if (x < 0) // 음수인 경우 
-		printf("It is a negative number.\n");
-	else // 0인 경우 
-		printf("It is zero.\n");
+	if (x < 0) // 음수인 경우 
+		x = x * -1;
+	printf("The absolute value is %i.\n", x);
+		
 	return 0;
 }
